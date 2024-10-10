@@ -1,0 +1,198 @@
+
+body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ccff00; /* DRV Bund Hintergrundfarbe */
+            position: relative;
+     }
+
+.header {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+.header button {
+            background-color: transparent;
+            border: 2px solid blue;
+            color: blue;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+.header button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+.container {
+            text-align: center;
+            width: 100%; /* Volle Breite für zentrierten Text */
+            
+        }
+
+h1 {
+            font-size: 2.5rem;
+            color: blue;
+    }
+
+p {
+            font-size: 1.2rem;
+            color: blue;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            line-height: 1.6;
+    }
+
+.btn {
+            display: inline-block;
+            background-color: transparent;
+            color: blue;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: 2px solid blue;
+            transition: background-color 0.3s ease;
+    }
+
+.btn:hover {
+            background-color: blue;
+            color: white;
+        }
+
+
+        /* Logo oben links */
+.logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ccff00;
+      }
+
+      .logo img {
+            width: 100px; /* Anpassen der Größe des Logos */
+            background-color: #ccff00;
+                }
+
+
+.close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+.close:hover,
+.close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+             }
+
+
+
+.containerl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0,3);
+}
+
+.containerl .registration{
+    display: none;
+}
+
+#check:checked ~ .registration{
+    display: block;
+}
+
+#check:checked ~ .login{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.containerl .form{
+    padding: 2rem;
+}
+
+.form header{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form input{
+    height: 60px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+
+}
+
+.form input:focus{
+    box-shadow: 0 1px 0 rgba(0,0,0,0,2);
+}
+
+.form a{
+    font-size:16px;
+    color: black;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form input.button{
+    color: #fff;
+    background: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form input.button:hover{
+    background-color: white;
+    outline: black;
+    color: black;
+}
+
+.signup{
+    font-size: 17px;
+    text-align: center;
+}
+
+.signup label{
+    color: #009579;
+    cursor: pointer;
+}
+
+.signup label:hover{
+    text-decoration: underline;
+}
+
