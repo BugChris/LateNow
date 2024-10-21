@@ -1,0 +1,221 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;/*#ccff00;  DRV Bund Hintergrundfarbe */
+    color: black;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+ 
+.header button {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+ 
+.header button:hover {
+    background-color: black;
+    color: white;
+}
+ 
+.container {
+    text-align: center;
+    width: 100%; /* Volle Breite für zentrierten Text */
+}
+ 
+h1 {
+    font-size: 2.5rem;
+}
+ 
+p {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    line-height: 1.6;
+}
+ 
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: background-color 0.2s ease;
+}
+ 
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+ 
+ 
+/* Logo oben links */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+ 
+.logo img {
+    width: 100px; /* Anpassen der Größe des Logos */
+}
+ 
+ 
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+ 
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+ 
+.modal-content h2 {
+    text-align: center;
+}
+ 
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+ 
+-btn {
+    position: left;
+ 
+}
+ 
+.btn1 input[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 3px 3px #3636361a;
+    inset: 0 -3px -3px #3636361a;
+    transition: 0,5s;
+    cursor: pointer;
+}
+ 
+.btn1 input:checked[type="checkbox"] {
+    background: #222;
+    box-shadow: inset 0 2px 2px #ffffff33;
+    inset: 0 -2px -2px #ffffff33;
+}
+ 
+.btn1 input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    top: 2px;
+    Left: 2px;
+    background: linear-gradient(to right, grey, black);
+    transition: 0,5s;
+    box-shadow: inset 0 2px 2px #fff, inset 0 -2px -2px #fff;
+}
+ 
+.btn1 input:checked[type="checkbox"]::before {
+    background: linear-gradient(to left, white, #222);
+    box-shadow: inset 0 2px 2px #ffffff33, inset 0 -2px -2px #ffffff33;
+    transform: translateX(39px);
+}
+ 
+body.dark-mode {
+    background: #222;
+    color: #eeeeee;
+}
+ 
+/* Darkmode Button Styling */
+body.dark-mode .header button,
+body.dark-mode .btn {
+    background-color: white; /* Weißer Button im Darkmode */
+    color: black; /* Schwarzer Text */
+    border-color: grey; /* Weißer Rand im Darkmode */
+}
+ 
+/* Hover-Effekte für Darkmode */
+body.dark-mode .header button:hover,
+body.dark-mode .btn:hover {
+    background-color: black; /* Schwarzer Hintergrund bei Hover im Darkmode */
+    color: white; /* Weißer Text bei Hover im Darkmode */
+}
+ 
+ 
+/* Whitemode (normaler Modus) */
+.header button,
+.btn {
+    background-color: black; /* Dunkler Hintergrund im Whitemode */
+    color: white; /* Heller Text im Whitemode */
+    border-color: black; /* Dunkler Rand */
+}
+ 
+ 
+/* Darkmode spezifische Anpassungen */
+body.dark-mode .header button,
+body.dark-mode .btn {
+    background-color: white; /* Heller Hintergrund im Darkmode */
+    color: black; /* Dunkler Text im Darkmode */
+    border-color: white; /* Heller Rand im Darkmode */
+}
+ 
+ 
+.darkModeButton {
+    margin-left: 50px; /* Verschiebt den Wrapper 50px nach rechts */
+    margin-top: 20px; /* Verschiebt den Wrapper 20px nach unten */
+  }
+ 
+

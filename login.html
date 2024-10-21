@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Login/Registration</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btnn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Benutzername eingeben" required>
+                <input type="text" class="input-field" placeholder="Passwort eingeben" required>
+                <input type="checkbox" class="chech-box"><span>Passwort merken</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Benutzername eingeben" required>
+                <input type="text" class="input-field" placeholder="Passwort eingeben" required>
+                <input type="checkbox" class="chech-box"><span>AGB gelesen und akzeptieren</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    
+
+
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btnn");
+
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.stlye.left = "110px";
+        }
+
+    </script>
+
+
+
+</body>
+</html>
